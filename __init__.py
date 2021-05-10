@@ -1,5 +1,5 @@
 from mycroft import MycroftSkill, intent_file_handler
-import gapi
+# import gapi
 
 
 class SickFeeling(MycroftSkill):
