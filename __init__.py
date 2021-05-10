@@ -8,8 +8,8 @@ class SickFeeling(MycroftSkill):
 
     @intent_file_handler('feeling.sick.intent')
     def handle_feeling_sick(self, message):
-        f = gapi.News()[:5]
-        #         f = message.data.get('f')
+#         f = gapi.News()[:5]
+        f = message.data.get('f')
     
 
         self.speak_dialog('feeling.sick', data={
