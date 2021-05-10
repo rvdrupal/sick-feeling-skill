@@ -7,7 +7,8 @@ class SickFeeling(MycroftSkill):
 
     @intent_file_handler('feeling.sick.intent')
     def handle_feeling_sick(self, message):
-        f = message.data.get('f')
+#         f = message.data.get('f')
+          f='OK Rohit'
 
         self.speak_dialog('feeling.sick', data={
             'f': f
