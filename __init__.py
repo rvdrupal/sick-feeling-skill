@@ -10,10 +10,12 @@ class SickFeeling(MycroftSkill):
     def handle_feeling_sick(self, message):
 #         f = gapi.News()[:5]
         f = message.data.get('f')
+        name=message.data.get('name')
+        
     
 
         self.speak_dialog('feeling.sick', data={
-            'f': f
+            'name':name,'f': f
         })
 
 
